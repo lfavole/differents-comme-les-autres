@@ -1,0 +1,29 @@
+# The URL the site will be built for
+base_url = "."
+title = "Différents comme les autres 05"
+description = "Association créée pour soutenir les familles avec un enfant présentant des troubles autistiques dans les Hautes-Alpes"
+
+theme = "juice"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = false
+
+[extra]
+# Put all your custom variables here
+juice_logo_name = "Différents comme les autres 05"
+juice_logo_path = "logo.png"
+juice_extra_menu = [
+    { title = "Github", link = "https://github.com/huhu/juice"}
+]
+juice_exclude_menu = [
+    "exclude_from_nav"
+]
+repository_url = "https://github.com/huhu/juice"

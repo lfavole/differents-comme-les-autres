@@ -1,0 +1,36 @@
+{% extends "juice/templates/index.html" %}
+
+{% block favicon %}
+    <link rel="icon" type="image/png" href="{{ get_url(path=config.extra.juice_logo_path) }}">
+{% endblock favicon %}
+
+{% block title %}{{ config.title }}{% endblock title %}
+
+{% block head %}
+<link rel="stylesheet" href="{{ get_url(path="overrides.css") }}">
+{% endblock head %}
+
+{% block hero %}
+<section class="text-center">
+    <h1 class="heading-text">{{ config.title }}</h1>
+    <h3 class="title-text">{{ config.description }}</h3>
+</section>
+<img class="hero-image" src="{{ get_url(path=config.extra.juice_logo_path) }}">
+{% endblock hero %}
+
+{% block toc %}{% endblock toc %}
+
+{% block content %}
+{{ section.content | safe }}
+{% endblock content %}
+
+{% block sidebar %}{% endblock sidebar %}
+
+{% block footer %}
+<footer>
+    <p>
+        <a href="mailto:contact@differentscommelesautres05.org">contact@differentscommelesautres05.org</a> -
+        <a href="https://www.facebook.com/people/Diff%C3%A9rents-comme-les-Autres-05/100063480221865/" target="_blank">Facebook</a>
+    </p>
+</footer>
+{% endblock footer %}

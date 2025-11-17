@@ -1,0 +1,8 @@
+contact = []
+
+[[social]]
+icon = "fa-envelope"
+url = "mailto:contact@differentscommelesautres05.org"
+[[social]]
+icon = "fa-facebook-f"
+url = "https://www.facebook.com/people/Diff%C3%A9rents-comme-les-Autres-05/100063480221865/"
